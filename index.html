@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Lunar</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255); /* White background */
+            color: #000; /* Black text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Top Frame (holds the icon and buttons) */
+        .top-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #5E2AE6; /* Purple background for the top frame */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Icon in the top frame */
+        .header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        /* Buttons Container in the top-left */
+        .buttons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .button {
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            color: #5E2AE6; /* Purple text */
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #4A22B2;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            background-color: #360B8E;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .button {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Frame -->
+    <div class="top-frame">
+        <!-- Icon and Title -->
+        <div class="header">
+            <img src="https://example.com/your-icon.png" alt="Icon"> <!-- Replace with your icon URL -->
+            <h1>Get Lunar</h1>
+        </div>
+
+        <!-- Buttons in the top-left inside the top frame -->
+        <div class="buttons">
+            <button class="button">Get Lunar Now</button>
+            <button class="button">Learn More</button>
+            <button class="button">Join Us</button>
+        </div>
+    </div>
+
+</body>
+</html>
