@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2D2D2D;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Gradient Background */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            z-index: -1;
+        }
+
+        /* Container */
+        .content {
+            text-align: center;
+            max-width: 800px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Header Style */
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        /* Paragraph Style */
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-weight: 300;
+            color: #e1e1e1;
+        }
+
+        /* Button Style */
+        .learn-more-btn {
+            background-color: #5E2AE6;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #4A22B2;
+            transform: translateY(-5px);
+        }
+
+        .learn-more-btn:active {
+            background-color: #360B8E;
+        }
+
+        /* Footer Style */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        .footer a {
+            color: #8f94fb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Keyframe Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Gradient Background -->
+    <div class="background"></div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Learn More About Us</h1>
+        <p>We offer a revolutionary exploit that can change how roblox can look.</p>
+        <button class="learn-more-btn" onclick="window.location.href='https://yourlink.com'">Learn More</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Lunar. All rights reserved. | <a href="https://yourlink.com/privacy">Privacy Policy</a></p>
+    </div>
+
+</body>
+</html>
